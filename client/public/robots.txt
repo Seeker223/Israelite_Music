@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+Disallow: /write
+Disallow: /cpanel
+Disallow: /login
+Disallow: /register
+
+Sitemap: https://www.israelitemusic.com/sitemap.xml

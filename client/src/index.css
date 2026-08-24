@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: radial-gradient(1200px 600px at 10% -10%, #eef5ff 0%, #f6f8ff 35%, #ffffff 100%);
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+  color: #0f172a;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+html,
+body,
+#root {
+  max-width: 100%;
+  overflow-x: clip;
+}
+
+html.dark body {
+  background: radial-gradient(1200px 600px at 10% -10%, #0f172a 0%, #0b1225 35%, #070b16 100%);
+  color: #e2e8f0;
+}
+
+.animatedButton{
+  animation-duration: 10000ms;
+}
+
+.ql-container{
+  border: none !important;
+}
+.ql-toolbar{
+  border: none !important;
+}
+.ql-editor{
+  border: none !important;
+}
+
+.overflow-wrap-anywhere {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.track-content,
+.track-content * {
+  max-width: 100%;
+}
+
+.track-content {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.track-content p,
+.track-content li,
+.track-content h1,
+.track-content h2,
+.track-content h3,
+.track-content h4,
+.track-content h5,
+.track-content h6,
+.track-content blockquote {
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
+
+.track-content img,
+.track-content iframe,
+.track-content video {
+  display: block;
+  max-width: 100%;
+}
+
+.track-content table {
+  display: block;
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+::selection {
+  background: #b3ccff;
+  color: #0f172a;
+}
+
+.skeleton-shimmer {
+  background: linear-gradient(90deg, #e2e8f0 20%, #f8fafc 50%, #e2e8f0 80%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s linear infinite;
+}
+
+html.dark .skeleton-shimmer {
+  background: linear-gradient(90deg, #1e293b 20%, #334155 50%, #1e293b 80%);
+  background-size: 200% 100%;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
